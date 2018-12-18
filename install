@@ -1,0 +1,25 @@
+#/bin/sh
+#apt-get install -y
+
+#if [ $UID -eq 0]; then
+
+if [ `whoami` = "root" ];then
+
+#For edit documents
+echo "For edit documents"
+apt-get install -y vim gedit
+#For qt
+echo "For qt"
+apt-get install -y libfontconfig1 mesa-common-dev libglu1-mesa-dev
+#For build makefile C++
+echo "For build makefile C++"
+apt-get install -y build-essential gcc gdb g++ make 
+#For viewer
+echo "For viewer"
+apt-get install -y xchm
+
+else 
+
+echo "Please using mode in Super user Root"
+
+fi
