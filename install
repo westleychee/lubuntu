@@ -17,6 +17,9 @@ apt-get install -y build-essential gcc gdb g++ make
 #For viewer
 echo "For viewer"
 apt-get install -y xchm
+#For Net-tools
+apt install net-tools
+
 
 else 
 
